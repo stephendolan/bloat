@@ -11,6 +11,10 @@ In a ruby project, you can add `bloat` to your `Gemfile`
 
 For non-ruby projects, you'll need to install ruby, and then `gem install bloat`
 
+## Usage
+
+Just run `bloat with {template_url}`, and the content at the template will be run from your current directory! For examples of what you might want to do, check out [RailsBytes](https://railsbytes.org).
+
 ## See it in action!
 
 Let's check out using `bloat` to make templates from [RailsBytes](https://railsbytes.org) work in a [Lucky](https://luckyframework.org) application. We can add the lovely [StimulusJS](https://stimulusjs.org) library to our app with one command!
