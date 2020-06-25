@@ -1,6 +1,7 @@
 # Bloat
 
 [![Gem Version](https://badge.fury.io/rb/bloat.svg)](https://badge.fury.io/rb/bloat)
+![CI](https://github.com/stephendolan/bloat/workflows/CI/badge.svg)
 
 Bloat is a tiny wrapper around a [Thor](http://whatisthor.com) `apply` call, and allows running arbitrary Thor template code from anywhere!
 
