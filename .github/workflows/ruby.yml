@@ -3,7 +3,7 @@ name: CI
 on: [push]
 
 jobs:
-  Lint:
+  Build:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,7 +14,12 @@ jobs:
         ruby-version: 2.7
     - name: Install dependencies
       run: bundle install
-    - name: StandardRB
-      env:
+
+  StandardRB:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: standardrb
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      uses: amoeba/standardrb-action@v3
+        uses: amoeba/standardrb-action@v2
