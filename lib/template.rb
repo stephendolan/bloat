@@ -16,7 +16,7 @@ class Template
 
   def validate_path
     unless working_url?
-      @error = "You've provided an invalid URL"
+      @error = "You've provided an invalid URL."
       return
     end
 
