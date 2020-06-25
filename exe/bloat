@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
 require "bloat"
+
+Bloat::CLI.start(ARGV)

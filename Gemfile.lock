@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     bloat (0.1.0)
+      thor (~> 1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -36,6 +37,7 @@ GEM
     standard (0.4.7)
       rubocop (~> 0.85.0)
       rubocop-performance (~> 1.6.0)
+    thor (1.0.1)
     unicode-display_width (1.7.0)
 
 PLATFORMS
