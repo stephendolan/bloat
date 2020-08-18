@@ -15,8 +15,22 @@ For non-ruby projects, you'll need to install ruby, and then `gem install bloat`
 
 Just run `bloat with {template_url}`, and the content at the template will be run from your current directory! For examples of what you might want to do, check out [RailsBytes](https://railsbytes.org).
 
-## See it in action!
+## Examples
 
-Let's check out using `bloat` to make templates from [RailsBytes](https://railsbytes.org) work in a [Lucky](https://luckyframework.org) application. We can add the lovely [StimulusJS](https://stimulusjs.org) library to our app with one command!
+Let's check out using `bloat` to make templates from [RailsBytes](https://railsbytes.org) work in a [Lucky](https://luckyframework.org) application.
 
-[![asciicast](https://asciinema.org/a/0Uh9XA5iWe1X3RpuriI829y3e.svg)](https://asciinema.org/a/0Uh9XA5iWe1X3RpuriI829y3e)
+#### We can add the lovely [StimulusJS](https://stimulusjs.org) library to Lucky our app with one command!
+
+`bloat with https://railsbytes.com/script/zl0sKQ`
+
+#### How about a Lucky app styled with TailwindCSS?
+
+`bloat with https://railsbytes.com/script/VeKsGg`
+
+#### Maybe we want to use TypeScript with Lucky?
+
+`bloat with https://railsbytes.com/script/zl0sNL`
+
+#### Bloat can even manage getting your Lucky app deployed to Heroku!
+
+`bloat with https://railsbytes.com/script/VQLsab`
