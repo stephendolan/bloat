@@ -20,7 +20,7 @@ GEM
     rake (13.0.1)
     regexp_parser (1.7.1)
     rexml (3.2.4)
-    rubocop (0.89.1)
+    rubocop (0.90.0)
       parallel (~> 1.10)
       parser (>= 2.7.1.1)
       rainbow (>= 2.2.2, < 4.0)
@@ -31,12 +31,12 @@ GEM
       unicode-display_width (>= 1.4.0, < 2.0)
     rubocop-ast (0.3.0)
       parser (>= 2.7.1.4)
-    rubocop-performance (1.7.1)
-      rubocop (>= 0.82.0)
+    rubocop-performance (1.8.0)
+      rubocop (>= 0.87.0)
     ruby-progressbar (1.10.1)
-    standard (0.5.2)
-      rubocop (~> 0.89.1)
-      rubocop-performance (~> 1.7.1)
+    standard (0.6.0)
+      rubocop (~> 0.90)
+      rubocop-performance (~> 1.8.0)
     thor (1.0.1)
     unicode-display_width (1.7.0)
 
@@ -47,7 +47,7 @@ DEPENDENCIES
   bloat!
   pry (~> 0.13.1)
   rake (~> 13.0)
-  standard (~> 0.5.2)
+  standard (~> 0.6.0)
 
 BUNDLED WITH
    2.1.4
