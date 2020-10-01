@@ -5,4 +5,4 @@ gemspec
 
 gem "pry", "~> 0.13.1"
 gem "rake", "~> 13.0"
-gem "standard", "~> 0.6.1"
+gem "standard", "~> 0.7"
