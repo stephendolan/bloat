@@ -5,6 +5,9 @@ class Template
   attr_reader :path
   attr_reader :error
 
+  ERROR_INVALID_URL = "You've provided an invalid URL."
+  ERROR_INVALID_CONTENT = "Your URL needs to resolve to a Thor-supported template, and can't contain things like HTML tags."
+
   def initialize(path:)
     @path = path
     @error = nil
@@ -16,12 +19,12 @@ class Template
 
   def validate_path
     unless working_url?
-      @error = "You've provided an invalid URL."
+      @error = ERROR_INVALID_URL
       return
     end
 
     unless valid_content?
-      @error = "Your URL needs to resolve to a Thor-supported template, and can't contain things like HTML tags."
+      @error = ERROR_INVALID_CONTENT
     end
   end
 
@@ -35,6 +38,11 @@ class Template
   def valid_content?
     content = Net::HTTP.get(URI.parse(path))
 
-    !content.match?(/<html>/)
+    invalid_patterns = [
+      /<html.*>/,
+      /<!DOCTYPE html.*>/
+    ]
+
+    !content.match?(Regexp.union(invalid_patterns))
   end
 end

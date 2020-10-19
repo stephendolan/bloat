@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bloat (0.1.0)
+    bloat (1.0.0)
       thor (~> 1.0)
 
 GEM
@@ -10,15 +10,16 @@ GEM
     ast (2.4.1)
     coderay (1.1.3)
     method_source (1.0.0)
+    minitest (5.14.2)
     parallel (1.19.2)
-    parser (2.7.1.5)
+    parser (2.7.2.0)
       ast (~> 2.4.1)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
     rainbow (3.0.0)
     rake (13.0.1)
-    regexp_parser (1.8.0)
+    regexp_parser (1.8.2)
     rexml (3.2.4)
     rubocop (0.92.0)
       parallel (~> 1.10)
@@ -29,9 +30,8 @@ GEM
       rubocop-ast (>= 0.5.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 2.0)
-    rubocop-ast (0.7.0)
+    rubocop-ast (0.8.0)
       parser (>= 2.7.1.5)
-      strscan (>= 1.0.0)
     rubocop-performance (1.8.1)
       rubocop (>= 0.87.0)
       rubocop-ast (>= 0.4.0)
@@ -39,7 +39,6 @@ GEM
     standard (0.7)
       rubocop (= 0.92)
       rubocop-performance (= 1.8.1)
-    strscan (1.0.3)
     thor (1.0.1)
     unicode-display_width (1.7.0)
 
@@ -48,6 +47,7 @@ PLATFORMS
 
 DEPENDENCIES
   bloat!
+  minitest (~> 5.14)
   pry (~> 0.13.1)
   rake (~> 13.0)
   standard (~> 0.7)

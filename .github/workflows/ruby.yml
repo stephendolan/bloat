@@ -3,7 +3,7 @@ name: CI
 on: [push]
 
 jobs:
-  Build:
+  LintandTest:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,12 +14,9 @@ jobs:
         ruby-version: 2.7
     - name: Install dependencies
       run: bundle install
-
-  StandardRB:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: standardrb
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        uses: amoeba/standardrb-action@v2
+    - name: Check StandardRB
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: amoeba/standardrb-action@v2
+    - name: Run tests
+      run: bundle exec rake test
