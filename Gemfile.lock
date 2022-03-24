@@ -39,7 +39,7 @@ GEM
     standard (1.0.4)
       rubocop (= 1.11.0)
       rubocop-performance (= 1.10.1)
-    thor (1.1.0)
+    thor (1.2.1)
     unicode-display_width (2.0.0)
 
 PLATFORMS
