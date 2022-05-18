@@ -8,7 +8,7 @@ class BloatTest < Minitest::Test
   end
 
   def test_invalid_content
-    template = Template.new(path: "https://stephencodes.com")
+    template = Template.new(path: "https://luckycasts.com")
     assert template.error == Template::ERROR_INVALID_CONTENT
   end
 
