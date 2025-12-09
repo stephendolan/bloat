@@ -43,7 +43,7 @@ GEM
       language_server-protocol (~> 3.17.0.2)
       rubocop (= 1.44.1)
       rubocop-performance (= 1.15.2)
-    thor (1.2.2)
+    thor (1.4.0)
     unicode-display_width (2.4.2)
 
 PLATFORMS
