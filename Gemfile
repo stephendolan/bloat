@@ -5,5 +5,5 @@ gemspec
 
 gem "minitest", "~> 5.18"
 gem "pry", "~> 0.15.2"
-gem "rake", "~> 13.0"
+gem "rake", "~> 13.3"
 gem "standard", "~> 1.24"
